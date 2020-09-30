@@ -17,16 +17,13 @@ char* append_string(char str1[], char str2[])
 {
        
       int i=0;
-      while(str2[i]!='\0')
+      while(str2[i]!='\0')        
      {
-      str1[a]= str2[i];
+      str1[a]= str2[i];          // merge the str2 at the end of str1 
       a++;
       i++;
      }
-     return str1;
-   
-    
-    
+     return str1; 
 }
 
 int main()
@@ -34,11 +31,11 @@ int main()
     char name1[30];
     char name2[30];
     printf("enter the string1 = ");
-    scanf("%s", name1);
+    scanf("%s", name1);                  // take string from user
     a=string_length(name1);
     printf("length of the string1 is = %d\n",a);
     printf("enter the string2 = ");
-    scanf("%s", name2);
+    scanf("%s", name2);                // take 2nd string from user
     b=string_length(name2);
     printf("length of the string2 is = %d\n",b);
     char *str = append_string(name1,name2);
