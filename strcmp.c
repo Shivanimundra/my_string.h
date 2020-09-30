@@ -20,25 +20,25 @@ int string_length( char str[])
 }
 void cmp_string(char *str1, char *str2)
 {
-    if(a!=b)
+    if(a!=b)                                   // if the length of the string is not equal then strings are not equal
     {
       printf("strings are not equal\n");
     }
     else
     {
-             while(*str1 == *str2)
+             while(*str1 == *str2)           // compare each character  
              {
                 str1++;
                 str2++;
-                i++;
-                if(i==a)
+                i++; 
+                if(i==a)                     // if all the characters are same
                 {
-                  printf("strings are equal\n");
+                  printf("strings are equal\n"); // strings are equal
                   x=1;
                 }
              }
     }
-    if(x!=1)
+    if(x!=1)                              // if all the characters are not same, strings are not equal
     {
         printf("strings are not equal");
     }
